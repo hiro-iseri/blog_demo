@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  verify:
+  build:
 
     runs-on: ubuntu-latest
     strategy:
