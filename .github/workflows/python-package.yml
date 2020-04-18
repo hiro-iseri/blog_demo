@@ -1,10 +1,8 @@
-name: Python package
+name: demo
 
 on:
   pull_request:
     types: [opened, synchronize]
-
-name: Test
 
 jobs:
   build:
