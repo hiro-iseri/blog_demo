@@ -1,10 +1,8 @@
-name: Python package
+name: demo
 
 on:
   pull_request:
     types: [opened, synchronize]
-
-name: Test
 
 jobs:
   build:
@@ -22,4 +20,4 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Test
       run: |
-        python -m unittest
+        python -m unittest discover tests
